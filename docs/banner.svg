@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" width="1280" height="420" role="img" aria-label="MindScribe — Private notes, beautifully kept">
+  <defs>
+    <!-- Deep Ocean Blue base, taken from res/values/colors.xml -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#0B1E35"/>
+      <stop offset="55%"  stop-color="#112240"/>
+      <stop offset="100%" stop-color="#1A3A5C"/>
+    </linearGradient>
+
+    <radialGradient id="glowCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#4FC3F7" stop-opacity="0.42"/>
+      <stop offset="60%"  stop-color="#4FC3F7" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#4FC3F7" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowWarm" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#FF9800" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#FF9800" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="wordmark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#FFFFFF"/>
+      <stop offset="62%"  stop-color="#DCF3FE"/>
+      <stop offset="100%" stop-color="#4FC3F7"/>
+    </linearGradient>
+
+    <linearGradient id="hairline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#4FC3F7" stop-opacity="0"/>
+      <stop offset="18%"  stop-color="#4FC3F7" stop-opacity="0.85"/>
+      <stop offset="82%"  stop-color="#4FC3F7" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#4FC3F7" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="glassCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="1280" height="420" fill="url(#bg)"/>
+
+  <!-- Ambient light -->
+  <circle cx="1075" cy="90"  r="330" fill="url(#glowCyan)"/>
+  <circle cx="120"  cy="380" r="260" fill="url(#glowCyan)" opacity="0.55"/>
+  <circle cx="880"  cy="360" r="200" fill="url(#glowWarm)"/>
+
+  <!-- Faint rule grid for depth -->
+  <g stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="1">
+    <path d="M0 105H1280M0 175H1280M0 245H1280M0 315H1280"/>
+  </g>
+
+  <!-- Glass mark -->
+  <g transform="translate(96 132)">
+    <rect width="108" height="108" rx="30" fill="url(#glassCard)" stroke="#4FC3F7" stroke-opacity="0.42" stroke-width="1.25"/>
+    <!-- Stylised quill / page fold -->
+    <path d="M34 74 L58 34 L74 46 L46 78 Z" fill="#4FC3F7" fill-opacity="0.92"/>
+    <path d="M34 74 L46 78 L32 82 Z" fill="#B3E5FC"/>
+    <path d="M30 86 H80" stroke="#B3E1F5" stroke-opacity="0.55" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="248" y="196"
+        font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="88" font-weight="700" letter-spacing="-2.2"
+        fill="url(#wordmark)">MindScribe</text>
+
+  <!-- Tagline -->
+  <text x="252" y="242"
+        font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="25" font-weight="400" letter-spacing="0.6"
+        fill="#B3E1F5" fill-opacity="0.92">Private notes, beautifully kept.</text>
+
+  <!-- Capability chips -->
+  <g font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#DCF3FE">
+    <g transform="translate(252 276)">
+      <rect width="184" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.08" stroke="#4FC3F7" stroke-opacity="0.34"/>
+      <text x="92" y="24.5" text-anchor="middle">Biometric App Lock</text>
+    </g>
+    <g transform="translate(450 276)">
+      <rect width="168" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.08" stroke="#4FC3F7" stroke-opacity="0.34"/>
+      <text x="84" y="24.5" text-anchor="middle">Offline-First Sync</text>
+    </g>
+    <g transform="translate(632 276)">
+      <rect width="162" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.08" stroke="#4FC3F7" stroke-opacity="0.34"/>
+      <text x="81" y="24.5" text-anchor="middle">Mood Analytics</text>
+    </g>
+    <g transform="translate(808 276)">
+      <rect width="196" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.08" stroke="#4FC3F7" stroke-opacity="0.34"/>
+      <text x="98" y="24.5" text-anchor="middle">Luna Journal Prompts</text>
+    </g>
+  </g>
+
+  <!-- Platform line -->
+  <text x="252" y="352"
+        font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="14" font-weight="500" letter-spacing="3.4"
+        fill="#7AB3D4">ANDROID · JAVA · FIREBASE · MATERIAL DESIGN 3</text>
+
+  <!-- Bottom hairline -->
+  <rect x="0" y="416" width="1280" height="2" fill="url(#hairline)"/>
+</svg>

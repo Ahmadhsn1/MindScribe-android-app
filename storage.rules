@@ -1,0 +1,54 @@
+rules_version = '2';
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  MindScribe — Cloud Storage Security Rules
+//
+//  Two upload paths exist in the app (see FirebaseHelper / ImageUploadWorker):
+//    profile_images/{uid}.jpg        — one avatar per user, keyed by UID
+//    note_images/{timestamp}.jpg     — image attached to a note
+//
+//  Both require an authenticated caller. Avatars are additionally locked to the
+//  owning UID by filename. Uploads are capped at 8 MB and must be images.
+//
+//  NOTE: note_images/ is a flat namespace keyed by upload timestamp, so these
+//  rules can only enforce "authenticated" rather than "owner". Migrating the
+//  path to note_images/{uid}/{noteId}.jpg would allow true per-owner isolation
+//  — tracked in the project roadmap.
+//
+//  Deploy:  firebase deploy --only storage
+// ─────────────────────────────────────────────────────────────────────────────
+
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    // Profile avatars — only the owning user may read or replace their own.
+    match /profile_images/{fileName} {
+      allow read:  if isSignedIn();
+      allow write: if isSignedIn()
+                   && fileName == request.auth.uid + '.jpg'
+                   && isValidImage();
+      allow delete: if isSignedIn() && fileName == request.auth.uid + '.jpg';
+    }
+
+    // Note attachments — signed-in access only.
+    match /note_images/{fileName} {
+      allow read:   if isSignedIn();
+      allow write:  if isSignedIn() && isValidImage();
+      allow delete: if isSignedIn();
+    }
+
+    // Deny everything not explicitly matched above.
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isValidImage() {
+      return request.resource.size < 8 * 1024 * 1024
+             && request.resource.contentType.matches('image/.*');
+    }
+  }
+}

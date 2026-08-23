@@ -1,0 +1,35 @@
+rules_version = '2';
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  MindScribe — Cloud Firestore Security Rules
+//
+//  Model: every user owns a private document tree at /users/{userId}, and all
+//  notes live in a subcollection beneath it. A user can only ever read or write
+//  inside their own subtree — there is no shared or public data in MindScribe.
+//
+//  Deploy:  firebase deploy --only firestore:rules
+// ─────────────────────────────────────────────────────────────────────────────
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Owner-only access to the user profile document and everything under it,
+    // including the /notes subcollection.
+    match /users/{userId} {
+      allow read, write: if isOwner(userId);
+
+      match /{document=**} {
+        allow read, write: if isOwner(userId);
+      }
+    }
+
+    // Deny everything not explicitly matched above.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isOwner(userId) {
+      return request.auth != null && request.auth.uid == userId;
+    }
+  }
+}

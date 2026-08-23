@@ -1,0 +1,60 @@
+### ─────────────────────────────────────────────────────────────
+###  Secrets & machine-local configuration  (NEVER commit these)
+### ─────────────────────────────────────────────────────────────
+local.properties
+app/google-services.json
+**/google-services.json
+!app/google-services.json.example
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+
+### ─────────────────────────────────────────────────────────────
+###  Gradle
+### ─────────────────────────────────────────────────────────────
+.gradle/
+build/
+app/build/
+captures/
+.cxx/
+
+### ─────────────────────────────────────────────────────────────
+###  Build outputs
+### ─────────────────────────────────────────────────────────────
+*.apk
+*.aab
+*.ap_
+*.aar
+*.dex
+*.class
+app/release/
+app/debug/
+output-metadata.json
+
+### ─────────────────────────────────────────────────────────────
+###  Android Studio / IntelliJ
+### ─────────────────────────────────────────────────────────────
+.idea/
+*.iml
+*.ipr
+*.iws
+.navigation/
+freeline/
+freeline_project_description.json
+
+### ─────────────────────────────────────────────────────────────
+###  Logs, profiling & crash reports
+### ─────────────────────────────────────────────────────────────
+*.log
+*.hprof
+hs_err_pid*
+replay_pid*
+
+### ─────────────────────────────────────────────────────────────
+###  OS noise
+### ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+__MACOSX/

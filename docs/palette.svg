@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 470" width="1120" height="470" role="img" aria-label="MindScribe design tokens — Deep Ocean Blue palette">
+  <defs>
+    <linearGradient id="sheet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#0B1E35"/>
+      <stop offset="100%" stop-color="#112240"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.03"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#4FC3F7" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#4FC3F7" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Checkerboard so translucent glass tokens read honestly -->
+    <pattern id="checker" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#0B1E35"/>
+      <rect width="8"  height="8"  fill="#20456B"/>
+      <rect x="8" y="8" width="8" height="8" fill="#20456B"/>
+    </pattern>
+  </defs>
+
+  <rect width="1120" height="470" fill="url(#sheet)"/>
+
+  <!-- Header -->
+  <g font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif">
+    <text x="48" y="58" font-size="27" font-weight="700" fill="#FFFFFF">Design Tokens</text>
+    <text x="48" y="86" font-size="15" fill="#7AB3D4">Deep Ocean Blue · res/values/colors.xml</text>
+  </g>
+  <rect x="48" y="104" width="1024" height="1.5" fill="url(#rule)"/>
+
+  <!-- ── Row 1: Surfaces ─────────────────────────────────────────────── -->
+  <text x="48" y="140" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="12" font-weight="700" letter-spacing="2.4" fill="#4FC3F7">SURFACES</text>
+
+  <g font-family="Consolas, SF Mono, Menlo, monospace">
+    <g transform="translate(48 154)">
+      <rect width="196" height="86" rx="16" fill="#0B1E35" stroke="#FFFFFF" stroke-opacity="0.14"/>
+      <text x="16" y="34" font-size="13" font-weight="600" fill="#FFFFFF" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">bg_main</text>
+      <text x="16" y="56" font-size="13" fill="#7AB3D4">#0B1E35</text>
+      <text x="16" y="74" font-size="11" fill="#7AB3D4" fill-opacity="0.8">app background</text>
+    </g>
+    <g transform="translate(258 154)">
+      <rect width="196" height="86" rx="16" fill="#112240" stroke="#FFFFFF" stroke-opacity="0.14"/>
+      <text x="16" y="34" font-size="13" font-weight="600" fill="#FFFFFF" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">bg_surface</text>
+      <text x="16" y="56" font-size="13" fill="#7AB3D4">#112240</text>
+      <text x="16" y="74" font-size="11" fill="#7AB3D4" fill-opacity="0.8">sheets, bars</text>
+    </g>
+    <g transform="translate(468 154)">
+      <rect width="196" height="86" rx="16" fill="#1A3A5C" stroke="#FFFFFF" stroke-opacity="0.14"/>
+      <text x="16" y="34" font-size="13" font-weight="600" fill="#FFFFFF" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">bg_card</text>
+      <text x="16" y="56" font-size="13" fill="#B3E1F5">#1A3A5C</text>
+      <text x="16" y="74" font-size="11" fill="#B3E1F5" fill-opacity="0.8">note cards</text>
+    </g>
+    <g transform="translate(678 154)">
+      <rect width="196" height="86" rx="16" fill="#1E4976" stroke="#FFFFFF" stroke-opacity="0.14"/>
+      <text x="16" y="34" font-size="13" font-weight="600" fill="#FFFFFF" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">bg_elevated</text>
+      <text x="16" y="56" font-size="13" fill="#B3E1F5">#1E4976</text>
+      <text x="16" y="74" font-size="11" fill="#B3E1F5" fill-opacity="0.8">dialogs, menus</text>
+    </g>
+    <!-- Glass over checkerboard -->
+    <g transform="translate(888 154)">
+      <rect width="184" height="86" rx="16" fill="url(#checker)"/>
+      <rect width="184" height="86" rx="16" fill="#FFFFFF" fill-opacity="0.20"/>
+      <rect width="184" height="86" rx="16" fill="none" stroke="#FFFFFF" stroke-opacity="0.22"/>
+      <text x="16" y="34" font-size="13" font-weight="600" fill="#FFFFFF" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">glass_white</text>
+      <text x="16" y="56" font-size="13" fill="#FFFFFF">#33FFFFFF</text>
+      <text x="16" y="74" font-size="11" fill="#FFFFFF" fill-opacity="0.8">20% overlay</text>
+    </g>
+  </g>
+
+  <!-- ── Row 2: Brand + text ─────────────────────────────────────────── -->
+  <text x="48" y="282" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="12" font-weight="700" letter-spacing="2.4" fill="#4FC3F7">BRAND &amp; TYPE</text>
+
+  <g font-family="Consolas, SF Mono, Menlo, monospace">
+    <g transform="translate(48 296)">
+      <rect width="196" height="72" rx="16" fill="#4FC3F7"/>
+      <text x="16" y="32" font-size="13" font-weight="600" fill="#06263A" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">primary</text>
+      <text x="16" y="54" font-size="13" fill="#06263A" fill-opacity="0.82">#4FC3F7</text>
+    </g>
+    <g transform="translate(258 296)">
+      <rect width="196" height="72" rx="16" fill="#0288D1"/>
+      <text x="16" y="32" font-size="13" font-weight="600" fill="#FFFFFF" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">primary_dark</text>
+      <text x="16" y="54" font-size="13" fill="#FFFFFF" fill-opacity="0.86">#0288D1</text>
+    </g>
+    <g transform="translate(468 296)">
+      <rect width="196" height="72" rx="16" fill="#1A3A5C" stroke="#FFFFFF" stroke-opacity="0.14"/>
+      <text x="16" y="32" font-size="13" font-weight="600" fill="#FFFFFF" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">text_primary</text>
+      <text x="16" y="54" font-size="13" fill="#FFFFFF" fill-opacity="0.85">#FFFFFF</text>
+    </g>
+    <g transform="translate(678 296)">
+      <rect width="196" height="72" rx="16" fill="#1A3A5C" stroke="#FFFFFF" stroke-opacity="0.14"/>
+      <text x="16" y="32" font-size="13" font-weight="600" fill="#B3E1F5" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">text_secondary</text>
+      <text x="16" y="54" font-size="13" fill="#B3E1F5" fill-opacity="0.85">#B3E1F5</text>
+    </g>
+    <g transform="translate(888 296)">
+      <rect width="184" height="72" rx="16" fill="#1A3A5C" stroke="#FFFFFF" stroke-opacity="0.14"/>
+      <text x="16" y="32" font-size="13" font-weight="600" fill="#7AB3D4" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">text_hint</text>
+      <text x="16" y="54" font-size="13" fill="#7AB3D4" fill-opacity="0.9">#7AB3D4</text>
+    </g>
+  </g>
+
+  <!-- ── Row 3: Semantic ─────────────────────────────────────────────── -->
+  <text x="48" y="404" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="12" font-weight="700" letter-spacing="2.4" fill="#4FC3F7">SEMANTIC</text>
+
+  <g font-family="Consolas, SF Mono, Menlo, monospace" font-size="12.5">
+    <g transform="translate(48 416)">
+      <rect width="240" height="38" rx="19" fill="#69F0AE"/>
+      <text x="18" y="24" fill="#06341F" font-weight="600">success &#183; #69F0AE</text>
+    </g>
+    <g transform="translate(302 416)">
+      <rect width="240" height="38" rx="19" fill="#FFD740"/>
+      <text x="18" y="24" fill="#3A2A00" font-weight="600">warning &#183; #FFD740</text>
+    </g>
+    <g transform="translate(556 416)">
+      <rect width="240" height="38" rx="19" fill="#FF6B6B"/>
+      <text x="18" y="24" fill="#3D0A0A" font-weight="600">error &#183; #FF6B6B</text>
+    </g>
+    <g transform="translate(810 416)">
+      <rect width="262" height="38" rx="19" fill="#FF9800"/>
+      <text x="18" y="24" fill="#3A2000" font-weight="600">streak_orange &#183; #FF9800</text>
+    </g>
+  </g>
+</svg>

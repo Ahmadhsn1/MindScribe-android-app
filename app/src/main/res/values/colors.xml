@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ── Core Brand: Deep Ocean Blue ─────────────────────────────────── -->
+    <color name="primary">#4FC3F7</color>            <!-- Sky Blue accent -->
+    <color name="primary_dark">#0288D1</color>
+    <color name="primary_light">#B3E5FC</color>
+    <color name="primary_container">#1A3A5C</color>
+
+    <!-- ── Background: Deep Blue Gradient base colors ───────────────────── -->
+    <color name="bg_main">#0B1E35</color>            <!-- Deep navy -->
+    <color name="bg_surface">#112240</color>
+    <color name="bg_card">#1A3A5C</color>
+    <color name="bg_elevated">#1E4976</color>
+    <color name="bg_input">#1A3A5C</color>
+
+    <!-- ── Glassmorphism Whites ──────────────────────────────────────────── -->
+    <color name="glass_white_strong">#33FFFFFF</color>   <!-- 20% white -->
+    <color name="glass_white_medium">#1AFFFFFF</color>  <!-- 10% white -->
+    <color name="glass_white_subtle">#0DFFFFFF</color>  <!-- 5% white -->
+    <color name="glass_border">#40FFFFFF</color>        <!-- Glass border -->
+    <color name="glass_border_accent">#804FC3F7</color> <!-- Glowing blue border -->
+    <color name="glass_glow">#334FC3F7</color>          <!-- Blue glow fill -->
+
+    <!-- ── Dark Card Colors (Home Dashboard) ────────────────────────────── -->
+    <color name="dark_card_bg">#1A3A5C</color>
+    <color name="dark_card_text">#FFFFFF</color>
+    <color name="dark_card_text_secondary">#B3E1F5</color>
+    <color name="dark_card_accent">#4FC3F7</color>
+
+    <!-- ── Text Colors ───────────────────────────────────────────────────── -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B3E1F5</color>
+    <color name="text_hint">#7AB3D4</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- ── Category Colors ───────────────────────────────────────────────── -->
+    <color name="cat_personal">#4FC3F7</color>
+    <color name="cat_work">#81C784</color>
+    <color name="cat_ideas">#FFD54F</color>
+    <color name="cat_important">#FF8A65</color>
+    <color name="cat_personal_bg">#1A3A5C</color>
+    <color name="cat_work_bg">#1A3A2C</color>
+    <color name="cat_ideas_bg">#3A3510</color>
+    <color name="cat_important_bg">#3A1A10</color>
+
+    <!-- ── UI Elements ───────────────────────────────────────────────────── -->
+    <color name="divider">#33FFFFFF</color>
+    <color name="stroke">#33FFFFFF</color>
+    <color name="stroke_gold">#404FC3F7</color>
+    <color name="ripple">#334FC3F7</color>
+    <color name="shadow">#80000000</color>
+    <color name="overlay">#CC0B1E35</color>
+
+    <!-- ── Status ────────────────────────────────────────────────────────── -->
+    <color name="error">#FF6B6B</color>
+    <color name="success">#69F0AE</color>
+    <color name="warning">#FFD740</color>
+
+    <!-- ── Favorite ──────────────────────────────────────────────────────── -->
+    <color name="favorite_active">#FFD740</color>
+    <color name="favorite_inactive">#404FC3F7</color>
+
+    <!-- ── Note themes (dark glass variants) ────────────────────────────── -->
+    <color name="note_default">#1A3A5C</color>
+    <color name="note_sage">#1A3A2C</color>
+    <color name="note_sky">#112240</color>
+    <color name="note_peach">#3A2A10</color>
+    <color name="note_rose">#3A1020</color>
+
+    <!-- ── Nav bar ───────────────────────────────────────────────────────── -->
+    <color name="nav_selected">#4FC3F7</color>
+    <color name="nav_unselected">#7AB3D4</color>
+    <color name="nav_bg">#0B1E35</color>
+
+    <!-- ── Streak / Glow Accent ──────────────────────────────────────────── -->
+    <color name="streak_orange">#FF9800</color>
+    <color name="streak_orange_glow">#80FF9800</color>
+    <color name="cyan_glow">#804FC3F7</color>
+</resources>

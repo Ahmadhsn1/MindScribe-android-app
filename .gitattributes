@@ -1,0 +1,25 @@
+# Normalise line endings so diffs stay clean across Windows / macOS / Linux.
+* text=auto eol=lf
+
+# Windows-only scripts must keep CRLF.
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+
+# Gradle wrapper script is executed by sh — keep LF.
+gradlew text eol=lf
+
+# Treat these as binary; never diff or normalise.
+*.jar   binary
+*.apk   binary
+*.aab   binary
+*.keystore binary
+*.jks   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.webp  binary
+*.ttf   binary
+*.otf   binary
+
+# Collapse generated/vendored noise in GitHub's language stats and diffs.
+gradle/wrapper/gradle-wrapper.jar linguist-vendored

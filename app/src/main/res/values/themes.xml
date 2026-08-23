@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MindScribe" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="android:windowBackground">@color/bg_main</item>
+        <item name="android:statusBarColor">@color/bg_main</item>
+        <item name="android:navigationBarColor">@color/nav_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:colorControlHighlight">@color/ripple</item>
+    </style>
+
+    <style name="Theme.MindScribe.Splash" parent="Theme.MindScribe">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Input Layout Style -->
+    <style name="MindScribe.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">#30FFFFFF</item>
+        <item name="boxStrokeErrorColor">@color/error</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1.5dp</item>
+        <item name="boxBackgroundColor">#15FFFFFF</item>
+        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="boxCornerRadiusTopStart">18dp</item>
+        <item name="boxCornerRadiusTopEnd">18dp</item>
+        <item name="boxCornerRadiusBottomStart">18dp</item>
+        <item name="boxCornerRadiusBottomEnd">18dp</item>
+    </style>
+
+    <!-- Primary Button - Glowing Cyan -->
+    <style name="MindScribe.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">#304FC3F7</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="cornerRadius">18dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="strokeColor">#504FC3F7</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!-- Text Button -->
+    <style name="MindScribe.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="MindScribe.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">#1AFFFFFF</item>
+        <item name="cardCornerRadius">22dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="strokeColor">#25FFFFFF</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!-- FAB Style - Glowing Cyan -->
+    <style name="MindScribe.FAB" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="backgroundTint">#4FC3F7</item>
+        <item name="tint">#0B1E35</item>
+    </style>
+
+    <!-- Bottom Navigation - Dark Glass -->
+    <style name="MindScribe.BottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@drawable/bg_bottom_nav</item>
+        <item name="itemIconTint">@color/nav_selector</item>
+        <item name="itemTextColor">@color/nav_selector</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+
+    <!-- Dialog -->
+    <style name="MindScribe.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="android:background">@color/bg_elevated</item>
+        <item name="colorPrimary">@color/primary</item>
+    </style>
+
+    <!-- Chip - Glass Style -->
+    <style name="MindScribe.Chip" parent="Widget.Material3.Chip.Filter">
+        <item name="android:textColor">#B3E1F5</item>
+        <item name="chipBackgroundColor">#15FFFFFF</item>
+        <item name="chipStrokeColor">#304FC3F7</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="chipCornerRadius">18dp</item>
+    </style>
+
+    <!-- Shape Appearance Overlays -->
+    <style name="ShapeAppearanceOverlay.Material3.Button.Circular" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>
