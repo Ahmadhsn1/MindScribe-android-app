@@ -610,3 +610,7 @@ If MindScribe gave you an idea worth borrowing, a ⭐ is always welcome.
 <sub>Built with Java, Firebase, and a real concern for other people's private notes.</sub>
 
 </div>
+
+## Case study
+
+The engineering decisions, metrics and screenshots for MindScribe are written up in the [MindScribe case study](https://ahmadhsn1.github.io/work/mindscribe/).
